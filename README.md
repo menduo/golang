@@ -30,6 +30,12 @@ func main(){
 }
 """
 golang.run_code(code)
-
-# golang.run(filepath)
 ```
+
+```python
+import golang
+
+filepath = "~/ws/contrib/golang/golang/testdata/gocode/code1/main.go"
+golang.run_file(filepath)
+```
+

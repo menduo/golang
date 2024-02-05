@@ -10,13 +10,15 @@ Run Go code in Python.
 pip install golang
 ```
 
-# or
+or
 
 ```shell
 pip install git+ssh://git@github.com/menduo/golang.git
 ```
 
 # example
+
+## run code
 
 ```python
 import golang
@@ -31,6 +33,8 @@ func main(){
 """
 golang.run_code(code)
 ```
+
+## run file
 
 ```python
 import golang

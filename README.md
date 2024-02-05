@@ -1,12 +1,22 @@
 # golang
 
-run go code in python.
+Run Go code in Python.
 
-WIP
+⚠️: WIP
+
+# install
 
 ```shell
 pip install golang
 ```
+
+# or
+
+```shell
+pip install git+ssh://git@github.com/menduo/golang.git
+```
+
+# example
 
 ```python
 import golang
@@ -19,7 +29,7 @@ func main(){
     fmt.Println("Hello World from github.com/menduo/golang")
 }
 """
-golang.run(code)
+golang.run_code(code)
 
 # golang.run(filepath)
 ```

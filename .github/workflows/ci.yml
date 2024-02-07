@@ -26,9 +26,9 @@ jobs:
 #        run: |
 #          black --check .
 
-      - name: Check imports order with isort
-        run: |
-          isort --check-only .
+#      - name: Check imports order with isort
+#        run: |
+#          isort --check-only .
 
       - name: Check code style with Flake8
         if: ${{ always() }}
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v4

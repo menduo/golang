@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # encoding: utf-8
-import sys, os, re
+import sys
+import os
 from setuptools import setup
-import golang
 
 repo_url = "https://github.com/menduo/golang"
 packages = ["golang"]
@@ -22,6 +22,7 @@ setup(
     keywords=keywords,
     description="golang",
     long_description="see more at:\n%s\n" % repo_url,
+    long_description_content_type="text/markdown",
     license="MIT",
     url=repo_url,
     author="menduo",
@@ -43,4 +44,12 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
     install_requires=[],
+    extras_require={
+        "dev": [
+            "black==24.*",
+            "flake8==7.*",
+            "isort==5.*",
+            "pytest==8.*",
+        ],
+    },
 )

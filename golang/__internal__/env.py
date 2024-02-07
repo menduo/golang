@@ -32,7 +32,9 @@ class Env:
         pass
 
     def __str__(self):
-        return f"GOROOT: {self.GOROOT}\nGOPATH: {self.GOPATH}\nGOOS: {self.GOOS}\nGOARCH: {self.GOARCH}\nGOPRIVATE: {self.GOPRIVATE}\n"
+        return (f"GOROOT: {self.GOROOT}\nGOPATH: {self.GOPATH}\n"
+                f"GOOS: {self.GOOS}\nGOARCH: {self.GOARCH}\n"
+                f"GOPRIVATE: {self.GOPRIVATE}\n")
 
     def __repr__(self):
         return self.__str__()

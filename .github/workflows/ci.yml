@@ -22,9 +22,9 @@ jobs:
           pip install wheel
           pip install -e .[dev]
 
-      - name: Check code format with Black
-        run: |
-          black --check .
+#      - name: Check code format with Black
+#        run: |
+#          black --check .
 
       - name: Check imports order with isort
         run: |

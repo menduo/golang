@@ -2,8 +2,6 @@ name: CI
 on:
   push:
     branches:
-      - main
-      - develop
       - release/*
     tags:
       - v*
@@ -41,7 +39,7 @@ jobs:
         run: |
           flake8 .
 
-  build-and-push-package:
+  publish-package:
     runs-on: ubuntu-latest
     environment:
       name: pypi

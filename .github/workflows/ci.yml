@@ -37,9 +37,9 @@ jobs:
 
   build-and-push-package:
     runs-on: ubuntu-latest
-    environment:
-      name: pypi
-      url: https://pypi.org/p/golang
+#    environment:
+#      name: pypi
+#      url: https://pypi.org/p/golang
     permissions:
       id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
 

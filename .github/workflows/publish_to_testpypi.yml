@@ -1,8 +1,8 @@
-name: test publish pypi
+name: Publish to testpypi
 on:
   push:
     branches:
-      - test-publish-pypi
+      - main
 
 permissions:
   contents: read
@@ -26,5 +26,5 @@ jobs:
         twine upload --repository testpypi dist/*
       env:
         TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
 

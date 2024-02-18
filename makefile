@@ -14,5 +14,5 @@ install_local:
 
 
 publish-test: clean
-	MDVEREND=`date +%s` python setup.py sdist bdist_wheel
+	MDVEREND=`date +%Y%m%d%H%M%S` python setup.py sdist bdist_wheel
 	twine upload --repository testpypi dist/*

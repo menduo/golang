@@ -22,7 +22,7 @@ jobs:
         pip install setuptools wheel twine
     - name: Build and publish
       run: |
-        MDVEREND=`date +%s` python setup.py sdist bdist_wheel
+        MDVEREND=`date +%Y%m%d%H%M%S` python setup.py sdist bdist_wheel
         twine upload --repository testpypi dist/*
       env:
         TWINE_USERNAME: __token__

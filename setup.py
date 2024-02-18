@@ -16,12 +16,16 @@ about = {}
 with open(os.path.join('./', 'golang', '__version__.py'), 'r') as f:
     exec(f.read(), about)
 
+long_description = f"see more at: {repo_url} \n"
+with open("README.md", "r") as f:
+    long_description += "\n" + f.read() + "\n"
+
 setup(
     name="golang",
     version=about["__version__"],
     keywords=keywords,
     description="golang",
-    long_description="see more at:\n%s\n" % repo_url,
+    long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
     url=repo_url,

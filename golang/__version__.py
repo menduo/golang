@@ -1,3 +1,5 @@
+import os
+
 __name__ = "golang"
 __author__ = "menduo"
-__version__ = "0.0.2"
+__version__ = os.getenv("MDVER", "0.0.2")

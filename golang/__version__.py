@@ -3,7 +3,7 @@ import os
 __name__ = "golang"
 __author__ = "menduo"
 
-__verbase__ = "0.0.2"
+__verbase__ = "0.0.3"
 __version__ = __verbase__
 
 __env_vernum__ = os.getenv("MDVERNUM")
